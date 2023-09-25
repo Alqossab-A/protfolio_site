@@ -1,0 +1,113 @@
+.body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Landing */
+.landing {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile */
+.profile {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.profilePicture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profileImg {
+    width: 5rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profileName {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0rem;
+    font-size: 2rem;
+}
+
+.profileLinkedIn {
+    margin: 0.5rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.profileGitHub {
+    margin: 0.5rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+/* Summary */
+.summary {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.summaryTitle {
+    width: 80%;
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.3rem;
+}
+
+.summaryText {
+    width: 80%;
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 1.3rem;
+}
+
+/* Skills */
+.skills {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.unorderedlist {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+/* Projects */
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact */
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
