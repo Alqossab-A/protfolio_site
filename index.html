@@ -14,6 +14,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ahmed Al-Qossab</title>
         <link rel="stylesheet" href="./resources/css/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
     </head>
     <body class="body">
         <div class="landing">
@@ -56,31 +60,31 @@
 
             <div class="skills">
                 <div class="skillsTitle">Skills</div>
-                <div class="front-end">front-end</div>
-                <ul class="unorderedlist">
+                <div class="frontend">front-end</div>
+                <ul class="skillsFrontend">
                     <li>react</li>
                     <li>javascript</li>
                     <li>html</li>
                     <li>css</li>
                 </ul>
-                <div class="back-end">back-end</div>
-                <ul class="unorderedlist">
+                <div class="backend">back-end</div>
+                <ul class="skillsBackend">
                     <li>node</li>
                     <li>express</li>
                     <li>jwt-tokens</li>
                 </ul>
                 <div class="devops">Devops</div>
-                <ul class="unorderedlist">
+                <ul class="skillsDevops">
                     <li>AWS</li>
                     <li>docker</li>
                 </ul>
                 <div class="databases">databases</div>
-                <ul class="unorderedlist">
+                <ul class="skillsDatabases">
                     <li>mongoDB</li>
                     <li>mySQL</li>
                 </ul>
                 <div class="utils">Utils</div>
-                <ul class="unorderedlist">
+                <ul class="skillsUtils">
                     <li>git</li>
                     <li>webpack</li>
                     <li>linux</li>
@@ -89,14 +93,12 @@
             </div>
         </div>
 
-        <div class="projectsArrow">
-            <a href="#projects"
-                >projects
-                <div class="arrow">arrow</div>
-            </a>
-        </div>
+        <a href="#projects" class="projectsArrow">
+            <div>projects</div>
+            <img src="./resources/svg/angleDownArrow.svg" aria-hidden="true" />
+        </a>
 
-        <div class="projects">
+        <div id="projects" class="projects">
             <div class="projectContainer">
                 <div class="projectTitle">project1</div>
                 <div class="projectImage">

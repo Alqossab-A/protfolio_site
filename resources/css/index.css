@@ -1,17 +1,14 @@
 .body {
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 /* Landing */
 .landing {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    align-self: center;
 }
 
 /* Profile */
@@ -88,10 +85,113 @@
     justify-content: center;
 }
 
-.unorderedlist {
+.skillsTitle {
+    width: 100%;
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.3rem;
+}
+
+.frontend {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.skillsFrontend {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+}
+
+.skillsFrontend li {
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+.backend {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.skillsBackend {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.skillsBackend li {
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+.devops {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.skillsDevops {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.skillsDevops li {
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+.databases {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.skillsDatabases {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.skillsDatabases li {
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+.utils {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.skillsUtils {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.skillsUtils li {
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Projects Arrow */
+.projectsArrow {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.projectsArrow div {
+    width: 100%;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+
+.projectsArrow img {
+    display: flex;
+    justify-content: cefa-regular fa-angle-down fa-bounce
 }
 
 /* Projects */
