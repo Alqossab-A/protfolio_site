@@ -64,14 +64,12 @@
 }
 
 .summaryTitle {
-    width: 80%;
     text-align: center;
     margin: 1rem;
     font-size: 2.3rem;
 }
 
 .summaryText {
-    width: 80%;
     text-align: center;
     margin: 1.5rem;
     font-size: 1.3rem;
@@ -189,25 +187,71 @@
     font-size: 1.3rem;
 }
 
-.projectsArrow img {
-    display: flex;
-    justify-content: cefa-regular fa-angle-down fa-bounce
-}
-
 /* Projects */
 .projects {
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 7rem 0rem;
+}
+
+.projectContainer {
+    max-width: 43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectTitle {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.3rem;
+}
+
+.projectImage {
+    width: 28rem;
+    height: auto;
+}
+
+.projectLink {
+    align-self: flex-start;
+    font-size: 1.3rem;
+}
+
+.projectLink a {
+    text-decoration: none;
+    color: white;
+}
+
+.projectDescription {
+    width: 11rem;
+    text-align: center;
+    margin: 1rem 4rem 1rem 1rem;; 
+    font-size: 1rem;
 }
 
 /* Contact */
 .contact {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactTitle {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.3rem;
+}
+
+.contactForm {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
