@@ -255,3 +255,17 @@
     justify-content: center;
     align-items: center;
 }
+
+.email {
+    width: 100%;
+}
+
+.message {
+    width: 100%;
+}
+
+.submit {
+    width: 50%;
+    margin: 1rem;
+    font-size: 1.3rem;
+}
