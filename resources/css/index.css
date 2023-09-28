@@ -1,367 +1,59 @@
 .body {
-    display: flex;
-    flex-direction: column;
+    background-color: black;
+    height: 100dvh;
+    width: 100%;
     margin: 0;
-}
-
-/* Landing */
-.landing {
-    width: 100%;
-    height: 83vh;
     display: flex;
-    flex-direction: row;
-    align-self: center;
-    background-color: #1e1e1e;;
-}
-
-/* Profile */
-.profile {
-    width: 23rem;
-    height: 30rem;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0rem 2.5rem 0rem 5rem;
-    border-radius: 5rem;
-    background-color: #f2b43b;
 }
 
-.profilePicture {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.profileImg {
-    width: 8rem;
-    height: auto;
-    border-radius: 50%;
-    border: 0.2rem solid #1e1e1e;;
-}
-
-.profileName {
-    width: 80%;
-    text-align: center;
-    margin: 2rem 0rem;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    color: #1e1e1e;;
-}
-
-.profileLinkedIn {
-    margin: 0.5rem 0.5rem;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-decoration: none;
-    color: #1e1e1e;;
-}
-
-.profileGitHub {
-    margin: 0.5rem 0.5rem;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-decoration: none;
-    color: #1e1e1e;;
-}
-
-/* Summary */
-.summary {
-    width: 50rem;
-    height: 25rem;
-    align-self: center;
+.square {
+    height: 95%;
+    width: 97%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem 2.5rem;
-    border-radius: 5rem;
-    background-color:#f2b43b;
+    justify-content: space-between;
+    /* background-color: rgb(48, 48, 48); */
+    border: solid 0.1rem White;
 }
 
-.summaryTitle {
-    text-align: center;
-    margin: 1rem;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 600;
-    font-size: 2.3rem;
-    color: #1e1e1e;
-}
-
-.summaryText {
-    text-align: center;
-    margin: 1.7rem;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 300;
-    font-size: 1.3rem;
-    color: #1e1e1e;;
-}
-
-/* Skills */
-.skills {
-    height: 38rem;
-    width: 28rem;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0rem 5rem 0rem 2.5rem;
-    border-radius: 5rem;
-    background-color: #f2b43b;
-}
-
-.skillsTitle {
-    width: 100%;
-    text-align: center;
-    margin: 1rem;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 600;
-    font-size: 2.3rem;
-}
-
-.frontend {
-    width: 23%;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.3rem;
-    margin-left: 2.5rem;
-    padding: 0.7rem;
-    border-radius: 0.6rem;
-    background-color: #46b0fc;
+.name {
+    margin: 1rem 4rem;
     color: white;
-}
-
-.skillsFrontend {
-    width: 54%;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin-top: -0.9rem;
-    margin-left: 2.5rem;
-    padding: 0.5rem;
-    border-radius: 0.6rem;
-    background-color: #46b0fc;
-    color: white;
-}
-
-.skillsFrontend li {
-    margin: 0.5rem;
     font-family: 'Noto Sans', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
+    font-size: 4rem;
 }
 
-.backend {
-    width: 100%;
-    font-size: 1.3rem;
-    margin-left: 3rem;
-}
-
-.skillsBackend {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-.skillsBackend li {
-    margin: 0.5rem;
-    font-size: 1rem;
-}
-
-.devops {
-    width: 100%;
-    font-size: 1.3rem;
-    margin-left: 3rem;
-}
-
-.skillsDevops {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-.skillsDevops li {
-    margin: 0.5rem;
-    font-size: 1rem;
-}
-
-.databases {
-    width: 100%;
-    font-size: 1.3rem;
-    margin-left: 3rem;
-}
-
-.skillsDatabases {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-.skillsDatabases li {
-    margin: 0.5rem;
-    font-size: 1rem;
-}
-
-.utils {
-    width: 100%;
-    font-size: 1.3rem;
-    margin-left: 3rem;
-}
-
-.skillsUtils {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-.skillsUtils li {
-    margin: 0.5rem;
-    font-size: 1rem;
-}
-
-/* Projects Arrow */
-.projectsArrow {
-    width: 100%;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    background-color: #a6a390;
-}
-
-.projectsArrow div {
-    width: 100%;
-    text-align: center;
-    margin: 1rem;
-    font-size: 1.3rem;
-    background-color: #a6a390;
-}
-
-/* Projects */
 .projects {
-    height: 85vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #a6a390;
-}
-
-.projectContainer {
-    max-width: 43%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #1e1e1e;
-    border-radius: 3rem;
-    padding: 3.5rem;
-    margin-left: 3rem;
-}
-
-.projectTitle {
-    text-align: center;
-    margin: 1rem;
-    font-size: 2.3rem;
-    color: #dddcd4;
-}
-
-.projectImage {
-    width: 28rem;
-    height: auto;
-}
-
-.projectLink {
+    margin: 1rem 3.2rem;
     align-self: flex-start;
-    font-size: 1.3rem;
-}
-
-.projectLink a {
+    color: white;
     text-decoration: none;
-    color: #a6a390;
+    writing-mode: vertical-rl;
+    letter-spacing: 0.6rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 200;
 }
 
-.projectDescription {
-    width: 12rem;
-    text-align: center;
-    margin: 1rem 4rem 1rem -1.5rem;
+.description {
+    margin: 1.3rem;
+    align-self: flex-end;
+    max-width: 25%;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
-    font-weight: bold;
-    background-color: #f2b43b;
-    color: #1e1e1e;
-    padding: 2.5rem 1rem;
-    border-radius: 3rem;
-    transform: rotate(6deg);
+    font-weight: 300;
 }
 
-.projectDescription2 {
-    width: 10rem;
-    text-align: center;
-    margin: 1rem 4rem 1rem -1.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #f2b43b;
-    color: #1e1e1e;
-    padding: 2.5rem 1rem;
-    border-radius: 3rem;
-    transform: rotate(-6deg);
-}
-
-/* Contact */
 .contact {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    background: -moz-linear-gradient(
-        0deg,
-        rgba(244, 190, 87, 1) 0%,
-        rgba(239, 159, 66, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-        0deg,
-        rgba(244, 190, 87, 1) 0%,
-        rgba(239, 159, 66, 1) 100%
-    );
-    background: linear-gradient(
-        0deg,
-        rgba(244, 190, 87, 1) 0%,
-        rgba(239, 159, 66, 1) 100%
-    );
-}
-
-.contactTitle {
+    margin: 1.3rem;
     align-self: center;
-    margin: 1rem;
-    font-size: 2.3rem;
-}
-
-.contactForm {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.email {
-    width: 100%;
-}
-
-.message {
-    width: 100%;
-}
-
-.submit {
-    width: 50%;
-    margin: 1rem;
-    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
