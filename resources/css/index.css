@@ -1,32 +1,89 @@
+:root {
+    --pad: max(1.2rem, 4vmin);
+}
+
 .body {
     background-color: black;
     height: 100dvh;
-    width: 100%;
+    width: 100dvw;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.frame {
+    position: fixed;
+    left: var(--pad);
+    right: var(--pad);
+    top: var(--pad);
+    bottom: var(--pad);
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+
+.frame_line {
+    position: absolute;
+    background-color: white;
+    opacity: 1;
+}
+
+.frame_line-left {
+    left: 0;
+    top: 0;
+    width: 0.05rem;
+    height: 100%;
+}
+
+.frame_line-right {
+    right: 0;
+    top: 0;
+    width: 0.05rem;
+    height: 100%;
+}
+
+.frame_line-top {
+    left: 0;
+    top: 0;
+    height: 0.05rem;
+    width: 100%;
+}
+
+.frame_line-bottom {
+    left: 0;
+    bottom: 0;
+    height: 0.05rem;
+    width: 100%;
+}
+
+.blobs {
+    position: fixed;
+    left: var(--pad);
+    right: var(--pad);
+    top: var(--pad);
+    bottom: var(--pad);
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+
 .square {
-    height: 95%;
-    width: 97%;
+    position: fixed;
+    left: var(--pad);
+    right: var(--pad);
+    top: var(--pad);
+    bottom: var(--pad);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: rgb(48, 48, 48); */
-    border: solid 0.1rem White;
 }
 
 .name {
-    margin: 1rem 4rem;
     color: white;
     font-family: 'Noto Sans', sans-serif;
     font-size: 4rem;
 }
 
 .projects {
-    margin: 1rem 3.2rem;
     align-self: flex-start;
     color: white;
     text-decoration: none;
@@ -38,7 +95,6 @@
 }
 
 .description {
-    margin: 1.3rem;
     align-self: flex-end;
     max-width: 25%;
     color: white;
@@ -48,7 +104,6 @@
 }
 
 .contact {
-    margin: 1.3rem;
     align-self: center;
     color: white;
     text-decoration: none;
@@ -56,4 +111,44 @@
     font-family: 'Noto Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
+}
+
+.blue_blob {
+    position: absolute;
+    top: -15%;
+    left: 10%;
+    width: 25%;
+    opacity: .3;
+}
+
+.red_blob {
+    position: absolute;
+    top: -5%;
+    left: 77%;
+    width: 18%;
+    opacity: .3;
+}
+
+.yellow_blob {
+    position: absolute;
+    left: 70%;
+    top: 65%;
+    width: 25%;
+    opacity: .2;
+}
+
+.brown_blob {
+    position: absolute;
+    top: 83%;
+    left: -5%;
+    width: 40%;
+    opacity: .3;
+}
+
+.grey_blob {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    width: 10%;
+    opacity: .3;
 }
