@@ -12,6 +12,53 @@
     align-items: center;
 }
 
+.welcome {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation: textFadeOut 5.5s cubic-bezier(0.4, 0.2, 0.2, 1) forwards;
+}
+
+.welcome h2 {
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    animation: textFadeOut 3.5s cubic-bezier(0.4, 0.2, 0.2, 1) forwards;
+}
+
+.welcome h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0.5rem;
+    opacity: 1;
+    animation: textFadeOut 3.5s cubic-bezier(0.4, 0.2, 0.2, 1) forwards;
+}
+
+@keyframes textFadeOut {
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 .frame {
     position: fixed;
     left: var(--pad);
@@ -56,16 +103,6 @@
     width: 100%;
 }
 
-.blobs {
-    position: fixed;
-    left: var(--pad);
-    right: var(--pad);
-    top: var(--pad);
-    bottom: var(--pad);
-    mix-blend-mode: difference;
-    pointer-events: none;
-}
-
 .square {
     position: fixed;
     left: var(--pad);
@@ -77,10 +114,51 @@
     justify-content: space-between;
 }
 
+.blue_blob {
+    position: absolute;
+    top: -15%;
+    left: 10%;
+    width: 25%;
+    opacity: 0.3;
+}
+
+.red_blob {
+    position: absolute;
+    top: -5%;
+    left: 77%;
+    width: 18%;
+    opacity: 0.3;
+}
+
+.yellow_blob {
+    position: absolute;
+    left: 70%;
+    top: 65%;
+    width: 25%;
+    opacity: 0.2;
+}
+
+.brown_blob {
+    position: absolute;
+    top: 83%;
+    left: -5%;
+    width: 40%;
+    opacity: 0.3;
+}
+
+.grey_blob {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    width: 10%;
+    opacity: 0.3;
+}
+
 .name {
     color: white;
     font-family: 'Noto Sans', sans-serif;
     font-size: 4rem;
+    padding-left: 2rem;
 }
 
 .projects {
@@ -92,15 +170,17 @@
     font-family: 'Noto Sans', sans-serif;
     font-size: 2.8rem;
     font-weight: 200;
+    padding-left: 0.5rem;
 }
 
 .description {
     align-self: flex-end;
-    max-width: 25%;
+    width: 25%;
     color: white;
     font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
     font-weight: 300;
+    padding: 1rem;
 }
 
 .contact {
@@ -111,44 +191,131 @@
     font-family: 'Noto Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
+    padding-bottom: 1rem;
 }
 
-.blue_blob {
-    position: absolute;
-    top: -15%;
-    left: 10%;
-    width: 25%;
-    opacity: .3;
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1600px) {
+    .name {
+        font-size: 3.5rem;
+        padding-left: 2rem;
+    }
+    .projects {
+        font-size: 2rem;
+        padding-left: 0.5rem;
+    }
+    .description {
+        width: 50%;
+        font-size: 1rem;
+    }
+    .contact {
+        letter-spacing: 1rem;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
 }
 
-.red_blob {
-    position: absolute;
-    top: -5%;
-    left: 77%;
-    width: 18%;
-    opacity: .3;
+@media screen and (max-width: 1440px) {
+    .name {
+        font-size: 3.5rem;
+        padding-left: 2rem;
+    }
+    .projects {
+        font-size: 2rem;
+        padding-left: 0.5rem;
+    }
+    .description {
+        width: 50%;
+        font-size: 1rem;
+    }
+    .contact {
+        letter-spacing: 1rem;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
 }
 
-.yellow_blob {
-    position: absolute;
-    left: 70%;
-    top: 65%;
-    width: 25%;
-    opacity: .2;
+@media screen and (max-width: 1024px) {
+    .name {
+        font-size: 2rem;
+        padding-left: 2rem;
+    }
+    .projects {
+        font-size: 2rem;
+        padding-left: 0.5rem;
+    }
+    .description {
+        width: 50%;
+        font-size: 1rem;
+    }
+    .contact {
+        letter-spacing: 1rem;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
 }
 
-.brown_blob {
-    position: absolute;
-    top: 83%;
-    left: -5%;
-    width: 40%;
-    opacity: .3;
+@media screen and (max-width: 768px) {
+    .name {
+        font-size: 2rem;
+        padding-left: 2rem;
+    }
+    .projects {
+        font-size: 2rem;
+        padding-left: 0.5rem;
+    }
+    .description {
+        width: 50%;
+        font-size: 1rem;
+    }
+    .contact {
+        letter-spacing: 1rem;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
 }
 
-.grey_blob {
-    position: absolute;
-    left: 35%;
-    top: 40%;
-    width: 10%;
-    opacity: .3;
+@media screen and (max-width: 425px) {
+    .name {
+        font-size: 1.3rem;
+        padding-left: 0.5rem;
+    }
+    .projects {
+        font-size: 1.4rem;
+        padding-left: 0.5rem;
+    }
+    .description {
+        width: 80%;
+        font-size: 1rem;
+    }
+    .contact {
+        letter-spacing: 1rem;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .welcome h1 {
+        font-size: 1.5rem;
+    }
+    .welcome h2 {
+        font-size: 1.2rem;
+    }
+    .name {
+        font-size: 0.7rem;
+    }
+    .projects {
+        font-size: 1.4rem;
+        padding-left: 0.5rem;
+    }
+    .description {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+    .contact {
+        letter-spacing: 1rem;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
 }
