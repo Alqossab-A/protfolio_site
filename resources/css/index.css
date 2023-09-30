@@ -160,15 +160,22 @@ body {
     opacity: 0.3;
 }
 
-.name {
+.name h1 {
     color: white;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 4rem;
-    padding-left: 2rem;
+    font-family: 'Gloock', serif;
+    font-size: 7rem;
+    font-weight: 100;
+    padding: 0rem 3rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .projects {
-    align-self: flex-start;
+    align-self: center;
     color: white;
     text-decoration: none;
     writing-mode: vertical-rl;
@@ -179,13 +186,17 @@ body {
     padding-left: 0.5rem;
 }
 
+.projects:hover {
+    opacity: 0.5;
+}
+
 .description {
     align-self: flex-end;
     width: 25%;
     color: white;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.3rem;
+    font-weight: 200;
     padding: 1rem;
 }
 
@@ -198,6 +209,10 @@ body {
     font-size: 1.5rem;
     font-weight: 300;
     padding-bottom: 1rem;
+}
+
+.contact:hover {
+    opacity: 0.5;
 }
 
 /* Media Queries for Responsiveness */

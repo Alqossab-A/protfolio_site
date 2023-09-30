@@ -162,19 +162,19 @@ body {
 
 .name {
     color: white;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 2.8rem;
+    font-family: 'Gloock', serif;
+    font-size: 3.7rem;
     padding-left: 2rem;
 }
 
 .wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .home {
-    align-self: flex-start;
+    align-self: center;
     color: white;
     text-decoration: none;
     writing-mode: vertical-rl;
@@ -183,23 +183,30 @@ body {
     font-size: 2.8rem;
     font-weight: 200;
     padding-left: 0.5rem;
+    padding-bottom: 5rem;
+}
+
+.home:hover {
+    opacity: 0.5;
 }
 
 .link {
+    width: 28%;
     display: flex;
     align-self: center;
     flex-direction: column;
     text-decoration: none;
+    margin: auto;
 }
 
 .image {
     z-index: 1;
-    align-self: center;
-    width: 31%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding: 0.8vw;
     border: 0.1vw solid white;
+    opacity: 0.7;
 }
 
 .title {
@@ -217,6 +224,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
     font-weight: 300;
+    margin: 0;
     padding: 0rem 1rem;
 }
 
@@ -229,6 +237,10 @@ body {
     font-size: 1.5rem;
     font-weight: 300;
     padding-bottom: 1rem;
+}
+
+.contact:hover {
+    opacity: 0.5;
 }
 
 /* Media Queries for Responsiveness */
