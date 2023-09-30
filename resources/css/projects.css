@@ -12,6 +12,59 @@ body {
     align-items: center;
 }
 
+.welcome {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation: textFadeOut 4.5s cubic-bezier(0.4, 0.2, 0.2, 1) forwards, removeElement 2s forwards;
+}
+
+.welcome h2 {
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    animation: textFadeOut 3.5s cubic-bezier(0.4, 0.2, 0.2, 1) forwards;
+}
+
+.welcome h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0.5rem;
+    opacity: 1;
+    animation: textFadeOut 3.5s cubic-bezier(0.4, 0.2, 0.2, 1) forwards;
+}
+
+@keyframes textFadeOut {
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes removeElement {
+    to {
+        display: none;
+    }
+}
+
 .frame {
     position: fixed;
     left: var(--pad);
@@ -110,8 +163,14 @@ body {
 .name {
     color: white;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 4rem;
+    font-size: 2.8rem;
     padding-left: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .home {
@@ -126,6 +185,31 @@ body {
     padding-left: 0.5rem;
 }
 
+.link {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.image {
+    z-index: 1;
+    align-self: center;
+    width: 31%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.8vw;
+    border: 0.1vw solid white;
+}
+
+.title {
+    align-self: center;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
 .description {
     align-self: flex-end;
     width: 25%;
@@ -133,7 +217,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
     font-weight: 300;
-    padding: 1rem;
+    padding: 0rem 1rem;
 }
 
 .contact {
