@@ -12,59 +12,6 @@ body {
     align-items: center;
 }
 
-.welcome {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    background-color: black;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    animation: textFadeOut 5.5s cubic-bezier(0.4, 0.2, 0.2, 1) forwards, removeElement 2s forwards;
-}
-
-.welcome h2 {
-    color: white;
-    font-size: 1.6rem;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    opacity: 1;
-    animation: textFadeOut 3.5s cubic-bezier(0.4, 0.2, 0.2, 1) forwards;
-}
-
-.welcome h1 {
-    color: white;
-    font-size: 2rem;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 400;
-    margin: 0;
-    padding: 0.5rem;
-    opacity: 1;
-    animation: textFadeOut 3.5s cubic-bezier(0.4, 0.2, 0.2, 1) forwards;
-}
-
-@keyframes textFadeOut {
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes removeElement {
-    to {
-        display: none;
-    }
-}
-
 .frame {
     position: fixed;
     left: var(--pad);
@@ -167,7 +114,7 @@ body {
     padding-left: 2rem;
 }
 
-.projects {
+.home {
     align-self: flex-start;
     color: white;
     text-decoration: none;
