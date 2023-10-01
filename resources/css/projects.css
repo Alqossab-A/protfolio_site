@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: black;
+    background-color:  #050505;
     height: 100dvh;
     width: 100dvw;
     margin: 0;
@@ -16,7 +16,7 @@ body {
     height: 100vh;
     width: 100vw;
     position: fixed;
-    background-color: black;
+    background-color: #050505;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -163,7 +163,7 @@ body {
 .name {
     color: white;
     font-family: 'Gloock', serif;
-    font-size: 3.7rem;
+    font-size: 3rem;
     padding-left: 2rem;
 }
 
@@ -174,7 +174,7 @@ body {
 }
 
 .home {
-    align-self: center;
+    align-self: flex-start;
     color: white;
     text-decoration: none;
     writing-mode: vertical-rl;
@@ -196,17 +196,16 @@ body {
     align-self: center;
     flex-direction: column;
     text-decoration: none;
-    margin: auto;
+    margin-left: 20%;
+    margin-right: 37%;
 }
 
 .image {
     z-index: 1;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.8vw;
+    width: 100%;
+    padding: 0.8rem;
     border: 0.1vw solid white;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .title {
@@ -246,7 +245,7 @@ body {
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 1600px) {
     .name {
-        font-size: 3.5rem;
+        font-size: 3rem;
         padding-left: 2rem;
     }
     .projects {
@@ -266,7 +265,7 @@ body {
 
 @media screen and (max-width: 1440px) {
     .name {
-        font-size: 3.5rem;
+        font-size: 3rem;
         padding-left: 2rem;
     }
     .projects {
