@@ -164,8 +164,9 @@ body {
 .name {
     color: white;
     font-family: 'Gloock', serif;
-    font-size: 3rem;
-    padding-left: 2rem;
+    font-size: 8rem;
+    font-weight: 400;
+    padding-left: 1.2rem;
 }
 
 .wrapper {
@@ -181,7 +182,7 @@ body {
     writing-mode: vertical-rl;
     letter-spacing: 0.6rem;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.9rem;
     font-weight: 200;
     padding-left: 0.5rem;
     padding-bottom: 5rem;
@@ -226,10 +227,10 @@ body {
     width: 25%;
     color: white;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
     margin: 0;
-    padding: 0rem 1rem;
+    padding: 0rem 3rem;
 }
 
 .projects {
@@ -250,31 +251,34 @@ body {
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 1600px) {
     .name {
-        font-size: 3rem;
-        padding-left: 2rem;
+        font-size: 7.5rem;
+        padding-left: 1.2rem;
     }
     .link {
         font-size: 1.4rem;
         padding-left: 0.5rem;
     }
     .description {
-        width: 50%;
+        width: 30%;
         font-size: 1rem;
     }
     .projects {
         letter-spacing: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding-bottom: 1rem;
     }
 }
 
 @media screen and (max-width: 1440px) {
     .name {
-        font-size: 3rem;
-        padding-left: 2rem;
+        font-size: 6.5rem;
+        padding-left: 1.2rem;
+    }
+    .home {
+        font-size: 2.3rem;
     }
     .list {
-        border: none;
+        width: 26%;
     }
     .link {
         font-size: 1.3rem;
@@ -292,12 +296,37 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    .blue_blob {
+        width: 35%;
+        opacity: 0.3;
+    }
+
+    .red_blob {
+        width: 38%;
+        opacity: 0.3;
+    }
+
+    .yellow_blob {
+        width: 45%;
+        opacity: 0.3;
+    }
+
+    .brown_blob {
+        width: 60%;
+        opacity: 0.3;
+    }
+
+    .grey_blob {
+        width: 15%;
+        opacity: 0.3;
+    }
+    
     .name {
-        font-size: 2rem;
-        padding-left: 2rem;
+        font-size: 5rem;
+        padding-left: 1.2rem;
     }
     .list {
-        border: none;
+        width: 40%;
     }
     .link {
         font-size: 1.2rem;
@@ -315,19 +344,47 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .blue_blob {
+        width: 45%;
+        opacity: 0.6;
+    }
+
+    .red_blob {
+        width: 38%;
+        opacity: 0.6;
+    }
+
+    .yellow_blob {
+        width: 45%;
+        opacity: 0.6;
+    }
+
+    .brown_blob {
+        width: 60%;
+        opacity: 0.6;
+    }
+
+    .grey_blob {
+        width: 25%;
+        opacity: 0.6;
+    }
+
     .name {
+        font-size: 4rem;
+        padding-left: 1.2rem;
+    }
+    .home {
         font-size: 2rem;
-        padding-left: 2rem;
     }
     .list {
-        border: none;
+        width: 50%;
     }
     .link {
         font-size: 1rem;
         padding-left: 0.5rem;
     }
     .description {
-        width: 50%;
+        width: 80%;
         font-size: 1rem;
     }
     .projects {
@@ -339,14 +396,17 @@ body {
 
 @media screen and (max-width: 425px) {
     .name {
-        font-size: 1.3rem;
-        padding-left: 0.5rem;
+        font-size: 3.6rem;
+        padding-left: 1.2rem;
+    }
+    .home {
+        font-size: 2rem;
     }
     .list {
         border: none;
     }
     .link {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding-left: 0.5rem;
     }
     .description {
@@ -361,29 +421,27 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-    .welcome h1 {
-        font-size: 1.5rem;
-    }
-    .welcome h2 {
-        font-size: 1.2rem;
-    }
     .name {
-        font-size: 0.7rem;
+        font-size: 2.4rem;
+        padding-left: 1.2rem;
+    }
+    .home {
+        font-size: 1.5rem;
     }
     .list {
         border: none;
     }
     .link {
-        font-size: .6rem;
+        font-size: 1rem;
         padding-left: 0.5rem;
     }
     .description {
         width: 80%;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .projects {
         letter-spacing: 1rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding-bottom: 1rem;
     }
 }

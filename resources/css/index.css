@@ -22,7 +22,8 @@ body {
     justify-content: center;
     align-items: center;
     opacity: 1;
-    animation: textFadeOut 5.5s cubic-bezier(0.4, 0.2, 0.2, 1) forwards, removeElement 2s forwards;
+    animation: textFadeOut 5.5s cubic-bezier(0.4, 0.2, 0.2, 1) forwards,
+        removeElement 2s forwards;
 }
 
 .welcome h2 {
@@ -163,7 +164,8 @@ body {
 .name {
     color: white;
     font-family: 'Gloock', serif;
-    font-size: 3.3rem;
+    font-size: 6rem;
+    font-weight: 400;
     padding: 0rem 3rem;
 }
 
@@ -191,13 +193,13 @@ body {
 
 .description {
     align-self: flex-end;
-    width: 25%;
+    width: 35%;
     color: white;
     font-family: 'Noto Sans', sans-serif;
     font-size: 1.3rem;
     font-weight: 200;
     margin: 0;
-    padding: 1rem;
+    padding: 1.2rem;
 }
 
 .contact {
@@ -227,7 +229,7 @@ body {
     }
     .description {
         width: 50%;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .contact {
         letter-spacing: 1rem;
@@ -238,7 +240,7 @@ body {
 
 @media screen and (max-width: 1440px) {
     .name {
-        font-size: 3rem;
+        font-size: 5rem;
         padding-left: 2rem;
     }
     .projects {
@@ -246,7 +248,7 @@ body {
         padding-left: 0.5rem;
     }
     .description {
-        width: 50%;
+        width: 45%;
         font-size: 1rem;
     }
     .contact {
@@ -257,8 +259,33 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    .blue_blob {
+        width: 35%;
+        opacity: 0.3;
+    }
+
+    .red_blob {
+        width: 38%;
+        opacity: 0.3;
+    }
+
+    .yellow_blob {
+        width: 45%;
+        opacity: 0.3;
+    }
+
+    .brown_blob {
+        width: 60%;
+        opacity: 0.3;
+    }
+
+    .grey_blob {
+        width: 15%;
+        opacity: 0.3;
+    }
+
     .name {
-        font-size: 2rem;
+        font-size: 4rem;
         padding-left: 2rem;
     }
     .projects {
@@ -277,8 +304,33 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .blue_blob {
+        width: 45%;
+        opacity: 0.6;
+    }
+
+    .red_blob {
+        width: 38%;
+        opacity: 0.6;
+    }
+
+    .yellow_blob {
+        width: 45%;
+        opacity: 0.6;
+    }
+
+    .brown_blob {
+        width: 60%;
+        opacity: 0.6;
+    }
+
+    .grey_blob {
+        width: 25%;
+        opacity: 0.6;
+    }
+
     .name {
-        font-size: 2rem;
+        font-size: 3.3rem;
         padding-left: 2rem;
     }
     .projects {
@@ -286,7 +338,7 @@ body {
         padding-left: 0.5rem;
     }
     .description {
-        width: 50%;
+        width: 60%;
         font-size: 1rem;
     }
     .contact {
@@ -298,15 +350,15 @@ body {
 
 @media screen and (max-width: 425px) {
     .name {
-        font-size: 1.3rem;
+        font-size: 2rem;
         padding-left: 0.5rem;
     }
     .projects {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         padding-left: 0.5rem;
     }
     .description {
-        width: 80%;
+        width: 90%;
         font-size: 1rem;
     }
     .contact {
@@ -324,14 +376,14 @@ body {
         font-size: 1.2rem;
     }
     .name {
-        font-size: 0.7rem;
+        font-size: 1.7rem;
     }
     .projects {
-        font-size: 1.4rem;
+        font-size: 1rem;
         padding-left: 0.5rem;
     }
     .description {
-        width: 80%;
+        width: 90%;
         font-size: 0.8rem;
     }
     .contact {
